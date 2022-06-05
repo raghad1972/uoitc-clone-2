@@ -1,0 +1,36 @@
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Send push notification</h3>
+									</div>
+									<div class="card-body">
+										<div class="row row-sm">
+											<div class="col-lg">
+												<input id="token" class="form-control form-control-sm  mb-4" placeholder="Token" type="text">
+												<input id="title" class="form-control  mb-4" placeholder="Title" type="text">
+												<input id="message" class="form-control form-control-lg" placeholder="Message" type="text">
+											</div>
+                      <button onclick="push()" class="btn btn-primary">Go!</button>
+										</div>
+									</div>
+								</div>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/js/select2.js"></script>
+<script>
+function push(){
+  token = document.getElementById("token").value;
+  title = document.getElementById("title").value;
+  message = document.getElementById("message").value;
+  
+  $.ajax('/api/message', {
+    type: 'POST',  // http method
+    data: { token1:token, title1:title, message1:message},  // data to submit
+    success: function (data, status, xhr) {
+        console.log('status: ' + status + ', data: ' + data);
+    },
+    error: function (jqXhr, textStatus, errorMessage) {
+            console.log('Error' + errorMessage);
+    }
+});
+  
+//  console.log(token);
+}  
+</script>

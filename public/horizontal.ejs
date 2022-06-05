@@ -1,0 +1,1477 @@
+﻿		<link href="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/jvectormap/jqvmap.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/datatable/css/dataTables.bootstrap4.min-rtl.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/time-picker/jquery.timepicker.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/jQuery-countdowntimer/jQuery.countdownTimer.css" rel="stylesheet">
+	<body class="">
+		<div id="global-loader">
+			<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/svgs/loader.svg" alt="loader">
+		</div>
+
+		<div class="page">
+			<div class="page-main">
+				<div class="hor-header header">
+					<div class="container">
+						<div class="d-flex">
+							<a class="animated-arrow hor-toggle horizontal-navtoggle"><span></span></a>
+							<a class="header-brand" href="javascript:renderPage('index')">
+								<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Dayonelogo">
+								<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/brand/logo-white.png" class="header-brand-img dark-logo" alt="Dayonelogo">
+								<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/brand/favicon.png" class="header-brand-img mobile-logo" alt="Dayonelogo">
+								<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo" alt="Dayonelogo">
+							</a>
+							<div class="mt-0">
+								<form class="form-inline">
+									<div class="search-element">
+										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" tabindex="1">
+										<button class="btn btn-primary-color">
+											<i class="feather feather-search"></i>
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="d-flex order-lg-2 my-auto mr-auto">
+								<a class="nav-link my-auto icon p-0 nav-link-lg d-md-none navsearch" href="javascript:renderPage('#')" data-toggle="search">
+									<i class="feather feather-search search-icon header-icon"></i>
+								</a>
+								<div class="dropdown header-flags">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/flags/flag-png/united-kingdom.png" class="h-24" alt="img">
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow animated">
+										<a href="javascript:renderPage('#')" class="dropdown-item d-flex "> <span class="avatar  mr-3 align-self-center bg-transparent"><img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/flags/flag-png/india.png" alt="img" class="h-24"></span>
+											<div class="d-flex"> <span class="my-auto">India</span> </div>
+										</a>
+										<a href="javascript:renderPage('#')" class="dropdown-item d-flex"> <span class="avatar  mr-3 align-self-center bg-transparent"><img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/flags/flag-png/united-kingdom.png" alt="img" class="h-24"></span>
+											<div class="d-flex"> <span class="my-auto">UK</span> </div>
+										</a>
+										<a href="javascript:renderPage('#')" class="dropdown-item d-flex"> <span class="avatar mr-3 align-self-center bg-transparent"><img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/flags/flag-png/italy.png" alt="img" class="h-24"></span>
+											<div class="d-flex"> <span class="my-auto">Italy</span> </div>
+										</a>
+										<a href="javascript:renderPage('#')" class="dropdown-item d-flex"> <span class="avatar mr-3 align-self-center bg-transparent"><img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/flags/flag-png/united-states-of-america.png" class="h-24" alt="img"></span>
+											<div class="d-flex"> <span class="my-auto">US</span> </div>
+										</a>
+										<a href="javascript:renderPage('#')" class="dropdown-item d-flex"> <span class="avatar  mr-3 align-self-center bg-transparent"><img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/flags/flag-png/spain.png" alt="img" class="h-24"></span>
+											<div class="d-flex"> <span class="my-auto">Spain</span> </div>
+										</a>
+									</div>
+								</div>
+								<div class="dropdown header-fullscreen">
+									<a class="nav-link icon full-screen-link">
+										<i class="feather feather-maximize fullscreen-button fullscreen header-icons"></i>
+										<i class="feather feather-minimize fullscreen-button exit-fullscreen header-icons"></i>
+									</a>
+								</div>
+								<div class="dropdown header-message">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="feather feather-mail header-icon"></i>
+										<span class="badge badge-success side-badge">5</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow  animated">
+										<div class="header-dropdown-list message-menu" id="message-menu">
+											<a class="dropdown-item border-bottom" href="javascript:renderPage('#')">
+												<div class="d-flex align-items-center">
+													<div class="">
+														<span class="avatar avatar-md brround align-self-center cover-image" data-image-src="https://laravel.spruko.com/dayone/rtl/assets/images/users/1.jpg"></span>
+													</div>
+													<div class="d-flex">
+														<div class="pl-3">
+															<h6 class="mb-1">Jack Wright</h6>
+															<p class="fs-13 mb-1">All the best your template awesome</p>
+															<div class="small text-muted">
+																3 hours ago
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a class="dropdown-item border-bottom" href="javascript:renderPage('#')">
+												<div class="d-flex align-items-center">
+													<div class="">
+														<span class="avatar avatar-md brround align-self-center cover-image" data-image-src="https://laravel.spruko.com/dayone/rtl/assets/images/users/2.jpg"></span>
+													</div>
+													<div class="d-flex">
+														<div class="pl-3">
+															<h6 class="mb-1">Lisa Rutherford</h6>
+															<p class="fs-13 mb-1">Hey! there I'm available</p>
+															<div class="small text-muted">
+																5 hour ago
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a class="dropdown-item border-bottom" href="javascript:renderPage('#')">
+												<div class="d-flex align-items-center">
+													<div class="">
+														<span class="avatar avatar-md brround align-self-center cover-image" data-image-src="https://laravel.spruko.com/dayone/rtl/assets/images/users/3.jpg"></span>
+													</div>
+													<div class="d-flex">
+														<div class="pl-3">
+															<h6 class="mb-1">Blake Walker</h6>
+															<p class="fs-13 mb-1">Just created a new blog post</p>
+															<div class="small text-muted">
+																45 mintues ago
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a class="dropdown-item border-bottom" href="javascript:renderPage('#')">
+												<div class="d-flex align-items-center">
+													<div class="">
+														<span class="avatar avatar-md brround align-self-center cover-image" data-image-src="https://laravel.spruko.com/dayone/rtl/assets/images/users/4.jpg"></span>
+													</div>
+													<div class="d-flex">
+														<div class="pl-3">
+															<h6 class="mb-1">Fiona Morrison</h6>
+															<p class="fs-13 mb-1">Added new comment on your photo</p>
+															<div class="small text-muted">
+																2 days ago
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+											<a class="dropdown-item border-bottom" href="javascript:renderPage('#')">
+												<div class="d-flex align-items-center">
+													<div class="">
+														<span class="avatar avatar-md brround align-self-center cover-image" data-image-src="https://laravel.spruko.com/dayone/rtl/assets/images/users/6.jpg"></span>
+													</div>
+													<div class="d-flex">
+														<div class="pl-3">
+															<h6 class="mb-1">Stewart Bond</h6>
+															<p class="fs-13 mb-1">Your payment invoice is generated</p>
+															<div class="small text-muted">
+																3 days ago
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class=" text-center p-2">
+											<a href="javascript:renderPage('#')" class="">See All Messages</a>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown header-notify">
+									<a class="nav-link icon" data-toggle="sidebar-left" data-target=".sidebar-left">
+										<i class="feather feather-bell header-icon"></i>
+										<span class="bg-dot"></span>
+									</a>
+								</div>
+								<div class="dropdown profile-dropdown">
+									<a href="javascript:renderPage('#')" class="nav-link pl-1 pr-0 leading-none" data-toggle="dropdown">
+										<span>
+											<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/16.jpg" alt="img" class="avatar avatar-md bradius">
+										</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow animated">
+										<div class="p-3 text-center border-bottom">
+											<a href="javascript:renderPage('#')" class="text-center user pb-0 font-weight-bold">John Thomson</a>
+											<p class="text-center user-semi-title">App Developer</p>
+										</div>
+										<a class="dropdown-item d-flex" href="javascript:renderPage('#')">
+											<i class="feather feather-user ml-3 fs-16 my-auto"></i>
+											<div class="mt-1">Profile</div>
+										</a>
+										<a class="dropdown-item d-flex" href="javascript:renderPage('#')">
+											<i class="feather feather-settings ml-3 fs-16 my-auto"></i>
+											<div class="mt-1">Settings</div>
+										</a>
+										<a class="dropdown-item d-flex" href="javascript:renderPage('#')">
+											<i class="feather feather-mail ml-3 fs-16 my-auto"></i>
+											<div class="mt-1">Messages</div>
+										</a>
+										<a class="dropdown-item d-flex" href="javascript:renderPage('#')" data-toggle="modal" data-target="#changepasswordnmodal">
+											<i class="feather feather-edit-2 ml-3 fs-16 my-auto"></i>
+											<div class="mt-1">Change Password</div>
+										</a>
+										<a class="dropdown-item d-flex" href="javascript:renderPage('#')">
+											<i class="feather feather-power ml-3 fs-16 my-auto"></i>
+											<div class="mt-1">Sign Out</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sticky">
+					<div class="horizontal-main hor-menu clearfix">
+						<div class="horizontal-mainwrapper container clearfix">
+							
+							<nav class="horizontalMenu clearfix">
+								<ul class="horizontalMenu-list">
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('index')" class="sub-icon"><i class="feather feather-home hor-icon"></i>Dashboards <i class="fa fa-angle-down horizontal-icon"></i></a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">HR Dashboard</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-department')">Department</a></li>
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Employees</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-emplist')">Employees List</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-empview')">View Employee</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-addemployee')">Add Employee</a></li>
+														</ul>
+													</li>
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Attendance</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-attlist')">Attendance List</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-attuser')">Attendance By User</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-attview')">Attendance View</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-overviewcldr')">Overview Calender</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-attmark')">Attendance Mark</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-leaves')">Leave Settings</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-leavesapplication')">Leave Applications</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-recentleaves')">Recent Leaves</a></li>
+														</ul>
+													</li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-award')">Awards</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-holiday')">Holidays</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-notice')">Notice Board</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-expenses')">Expenses</a></li>
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Payroll</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-empsalary')">Employee Salary</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-addpayroll')">Add Payroll</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('hr-editpayroll')">Edit Payroll</a></li>
+														</ul>
+													</li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-events')">Events</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('hr-settings')">Settings</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Employee Dashboard</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index2')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('employee-attendance')">Attendance</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('employee-leaves')">Apply Leaves</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('employee-myleaves')">My Leaves</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('employee-payslips')">Payslips</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('employee-expenses')">Expenses</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Task Dashboard</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index3')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-list')">Task List</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-running')">Running Tasks</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-hold')">OnHold Tasks</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-complete')">Completed Tasks</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-view')">View Task</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-overclndr')">Overview Calendar</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-board')">Task Board</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-new')">New Task</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('task-profile')">User Profile</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Project Dashboard</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index4')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('project-list')">Project List</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('project-view')">View Project</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('project-overclndr')">Overview Calendar</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('project-new')">New Project</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Client Dashboard</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index5')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('client-list')">Client List</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('client-view')">View Client</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('client-new')">New Client</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('client-profile')">User Profile</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Job Dashboard</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index6')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('job-list')">Job Lists</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('job-view')">Job View</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('job-applictaion')">Job Applications</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('job-apply')">Apply Job</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('job-new')">New Job</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('job-user')">User Profile</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Support System</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Landing Pages</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-landing')">Landing Page</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-knowledge')">Knowledge Page</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-knowledgeview')">Knowledge View</a></li>
+														</ul>
+													</li>
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">User Pages</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-userdash')">Dashboard</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-editprofile')">Profile</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-ticketlist')">Ticket List</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-ticketactive')">Active Tickets</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-ticketclosed')">Closed Tickets</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-ticketcreate')">Create Ticket</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-ticketview')">View Ticket</a></li>
+														</ul>
+													</li>
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Admin Pages</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-admindash')">Dashboard</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-admineditprofile')">Profile</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-adminticketlist')">Ticket List</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-adminticketactive')">Active Tickets</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-adminticketclosed')">Closed Tickets</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-adminticketnew')">New Ticket</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-adminticketview')">View Ticket</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-admincustomer')">Customers</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-admincategories')">Categories</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-adminarticles')">Articles</a></li>
+														</ul>
+													</li>
+													<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Agent</a>
+														<ul class="sub-menu">
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-agentdash')">Dashboard</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-agentticketlist')">Ticket List</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-agentticketactive')">Active Tickets</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-agentticketclosed')">Closed Tickets</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-agentticketview')">View Ticket</a></li>
+															<li aria-haspopup="true"><a href="javascript:renderPage('support-agentassign')">Assigned Categories</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chat-livechat')">Chat</a></li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Admin</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('admin-general')">General Settings</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('admin-api')">API Settings</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('admin-role')">Role Access</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Super Admin</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('index7')">Dashboard</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('superadmin-company')">Companies</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('superadmin-subscription')">Subscription Plans</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('superadmin-invoices')">Invoices</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('superadmin-admins')">Super Admins</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('superadmin-settings')">Settings</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('superadmin-role')">Role Access</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="">
+											<i class="feather feather-codepen hor-icon"></i> Widgets <i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true"><a href="javascript:renderPage('widgets2')">Chart Widgets</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('widgets1')">Widgets</a></li>
+										</ul>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-server hor-icon"></i> Components<i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<div class="horizontal-megamenu clearfix">
+											<div class="container">
+												<div class="mega-menubg">
+													<div class="row">
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li><h3 class="fs-14 font-weight-bold">Chat</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('chat')">Chat 01</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('chat2')">Chat 02</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('chat3')">Chat 03</a></li>
+																<li><h3 class="fs-14 font-weight-bold mt-3">Contact</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('contact-list')">Contact list 01</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('contact-list2')">Contact list 02</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('calendar')">Calendar</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li aria-haspopup="true"><a href="javascript:renderPage('cookies')">Cookies</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('counters')">Counters</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('dragula')">Dragula Card</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('image-comparison')">Image Comparison</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('loaders')">Loaders</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('notify')">Notifications</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('page-sessiontimeout')">Page-sessiontimeout</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li aria-haspopup="true"><a href="javascript:renderPage('rangeslider')">Range slider</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('rating')">Rating</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('sweetalert')"> Sweet alerts</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('time-line')"> Time Line</a></li>
+																<li><h3 class="fs-14 font-weight-bold mb-1 mt-3">Todo List</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('todo-list')">Todo List 01</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('todo-list2')">Todo List 02</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('todo-list3')">Todo List 03</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li><h3 class="fs-14 font-weight-bold">File Manager</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('file-manager')">File Manager 01</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('file-manager-list')">File Manager 02</a></li>
+																<li><h3 class="fs-14 font-weight-bold mt-3">User List</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('users-list1')">User List 01</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('users-list2')">User List 02</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('users-list3')">User List 03</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('users-list4')">User List 04</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-file hor-icon"></i> Forms <i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true"><a href="javascript:renderPage('form-elements')"> Form Elements</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('advanced-forms')"> Advanced Forms</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('form-wizard')">Form Wizard</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('form-editor')">Form Editor</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('form-sizes')">Form Element Sizes</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('form-treeview')">Form Treeviewh</a></li>
+										</ul>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-layers hor-icon"></i> Elements  <i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<div class="horizontal-megamenu clearfix">
+											<div class="container">
+												<div class="mega-menubg">
+													<div class="row">
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li aria-haspopup="true"><a href="javascript:renderPage('accordion')">Accordion</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('alerts')">Alerts</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('avatars')">Avatars</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('badge')">Badges</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('breadcrumbs')">Breadcrumb</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('buttons')">Buttons</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('cards')">Cards</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('cards-image')">Card Images</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('carousel')">Carousel</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('dropdown')"> Dropdown</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('footers')">Footers</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('headers')">Headers</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+
+																<li aria-haspopup="true"><a href="javascript:renderPage('jumbotron')">Jumbotron</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('list-listgroup')">Lists & List Group</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('media-object')"> Media Obejct</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('modal')">Modal</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('navigation')">Navigation</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('pagination')">Pagination</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('panels')"> Panel</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('popover')">Popover</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('progress')">Progress</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('tabs')">Tabs</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('tags')">Tags</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('tooltip')"> Tooltips</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li><h3 class="fs-14 font-weight-bold mb-1">Utilities</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('elements-border')">Border</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('element-colors')">Colors</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('elements-display')"> Display</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('element-flex')">Flex Items</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('element-height')">Height</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('elements-margin')">Margin</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('elements-paddning')">Padding</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('element-typography')">Typhography</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('element-width')">Width</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-3 col-md-12 col-xs-12 link-list">
+															<ul>
+																<li><h3 class="fs-14 font-weight-bold">Tables</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('tables')">Default table</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('datatable')">Data Table</a></li>
+																<li><h3 class="fs-14 font-weight-bold mt-3">E-Commerce</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('products')"> Products</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('product-details')">Product Details</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('cart')">Shopping Cart</a></li>
+																<li><h3 class="fs-14 font-weight-bold mt-3">Maps</h3></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('maps2')">Leaflet Maps</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('maps3')">Mapel Maps</a></li>
+																<li aria-haspopup="true"><a href="javascript:renderPage('maps')">Vector Maps</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-bar-chart hor-icon"></i> Charts <i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-apex')">Apex Charts</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-chartist')">Chartjs Charts</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-echart')">Echart Charts</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-flot')">Flot Charts</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-morris')"> Morris Charts</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-peity')">Pie Charts</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('chart-c3')">C3 Charts</a></li>
+										</ul>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-copy hor-icon"></i> Pages <i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Profile</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('profile1')"> Profile 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('profile2')">Profile 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('profile3')">Profile 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('editprofile')">Edit Profile</a></li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Email</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('email-compose')">Email Compose</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('email-inbox')">Email Inbox</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('email-read')">Email Read</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Pricing</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('pricing')">Pricing 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('pricing2')">Pricing 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('pricing3')">Pricing 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Invoice</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('invoice-list')">Invoice list</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('invoice1')">Invoice 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('invoice2')">Invoice 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('invoice3')">Invoice 03</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('invoice-add')">Add Invoice</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('invoice-edit')">Edit Invoice</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Blog</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('blog')">Blog 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('blog2')">Blog 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('blog3')">Blog 03</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('blog-styles')">Blog Styles</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('gallery')">Gallery</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('faq')">FAQS</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('terms')">Terms</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('search')"> Search</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('emptypage')">Empty Page</a></li>
+										</ul>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-lock hor-icon"></i> Account<i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Register</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('register1')">Register 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('register2')">Register 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('register3')">Register 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Login</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('login1')">Login 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('login2')">Login 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('login3')">Login 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Forget Password</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('forgot-password1')">Forget Password 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('forgot-password2')">Forget Password 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('forgot-password3')">Forget Password 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Reset Password</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('reset-password1')">Reset Password 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('reset-password2')">Reset Password 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('reset-password3')">Reset Password 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Lock Screen</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('lockscreen1')">Lock Screen 01</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('lockscreen2')">Lock Screen 02</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('lockscreen3')">Lock Screen 03</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('construction')">Under Construction</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('coming')">Coming Soon </a></li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Alert Messages</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('message-success')">Success Message</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('message-warning')">Warning Message</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('message-danger')">Danger Message</a></li>
+												</ul>
+											</li>
+											<li aria-haspopup="true" class="sub-menu-sub"><a href="javascript:renderPage('#')">Error Pages</a>
+												<ul class="sub-menu">
+													<li aria-haspopup="true"><a href="javascript:renderPage('error400')">400</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('error401')">401</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('error403')">403</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('error404')">404</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('error500')">500</a></li>
+													<li aria-haspopup="true"><a href="javascript:renderPage('error503')">503</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li aria-haspopup="true">
+										<a href="javascript:renderPage('#')" class="sub-icon">
+											<i class="feather feather-compass hor-icon"></i> Icons <i class="fa fa-angle-down horizontal-icon"></i>
+										</a>
+										<ul class="sub-menu">
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons')">Font Awesome</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons2')">Material Design Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons3')">Simple Line Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons4')">Feather Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons5')">Ionic Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons6')">Flag Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons7')">pe7 Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons8')">Themify Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons9')">Typicons Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons10')">Weather Icons</a></li>
+											<li aria-haspopup="true"><a href="javascript:renderPage('icons11')">Material Svgs</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+							
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="container">
+						<div class="page-header d-xl-flex d-block">
+							<div class="page-leftheader">
+								<h4 class="page-title">HR<span class="font-weight-normal text-muted ml-2">Dashboard</span></h4>
+							</div>
+							<div class="page-leftheader mr-md-auto">
+								<div class="d-flex align-items-end flex-wrap my-auto left-content breadcrumb-left">
+									<div class="d-flex">
+										<div class="header-datepicker ml-3">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<div class="input-group-text">
+														<i class="feather feather-calendar"></i>
+													</div>
+												</div><input class="form-control fc-datepicker" placeholder="19 Feb 2020" type="text">
+											</div>
+										</div>
+										<div class="header-datepicker ml-3">
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<div class="input-group-text">
+														<i class="feather feather-clock"></i>
+													</div>
+												</div>
+												<input id="tpBasic" type="text" placeholder="09:30am" class="form-control input-small">
+											</div>
+										</div>
+									</div>
+									<div class="d-lg-flex d-block">
+										<div class="btn-list">
+											<button class="btn btn-primary" data-toggle="modal" data-target="#clockinmodal">Clock In</button>
+											<button class="btn btn-light" data-toggle="tooltip" data-placement="top" title="E-mail"> <i class="feather feather-mail"></i> </button>
+											<button class="btn btn-light" data-placement="top" data-toggle="tooltip" title="Contact"> <i class="feather feather-phone-call"></i> </button>
+											<button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Info"> <i class="feather feather-info"></i> </button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-9 col-md-12 col-lg-12">
+								<div class="row">
+									<div class="col-xl-4 col-lg-6 col-md-12">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-8">
+														<div class="mt-0 text-right"> <span class="fs-14 font-weight-semibold">Total Employees</span>
+															<h3 class="mb-0 mt-1 mb-2">6,578</h3>
+															<span class="text-muted">
+																<span class="text-success fs-12 mt-2 ml-1"><i class="feather feather-arrow-up-right ml-1 bg-success-transparent p-1 brround"></i>124</span>
+																for last month
+															</span>
+														</div>
+													</div>
+													<div class="col-4">
+														<div class="icon1 bg-success-transparent my-auto  float-left"> <i class="feather feather-users"></i> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-6 col-md-12">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-8">
+														<div class="mt-0 text-right"> <span class="fs-14 font-weight-semibold">Department</span>
+															<h3 class="mb-0 mt-1 mb-2">124</h3>
+															<span class="text-muted">
+																<span class="text-danger fs-12 mt-2 ml-1"><i class="feather feather-arrow-down-left ml-1 bg-danger-transparent p-1 brround"></i>13</span>
+																for last month
+															</span>
+														</div>
+													</div>
+													<div class="col-4">
+														<div class="icon1 bg-primary-transparent my-auto  float-left"> <i class="feather feather-box"></i> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-12 col-md-12">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-8">
+														<div class="mt-0 text-right"> <span class="fs-14 font-weight-semibold">Expenses</span>
+														<h3 class="mb-0 mt-1  mb-2">$2,7853</h3> </div>
+														<span class="text-muted">
+															<span class="text-danger fs-12 mt-2 ml-1"><i class="feather feather-arrow-up-right ml-1 bg-danger-transparent p-1 brround"></i>21.1% </span>
+															for last month
+														</span>
+													</div>
+													<div class="col-4">
+														<div class="icon1 bg-secondary-transparent brround my-auto  float-left"> <i class="feather feather-dollar-sign"></i> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-12 col-md-12 col-lg-12">
+										<div class="card">
+											<div class="card-header border-0 responsive-header">
+												<h4 class="card-title">Overview</h4>
+												<div class="card-options">
+													<div class="btn-list">
+														<a href="javascript:renderPage('#')" class="btn  btn-outline-light text-dark float-left d-flex my-auto"><span class="dot-label bg-light4 ml-2 my-auto"></span>Employees</a>
+														<a href="javascript:renderPage('#')" class="btn  btn-outline-light text-dark float-left d-flex my-auto"><span class="dot-label bg-primary ml-2 my-auto"></span>Budget</a>
+														<a href="javascript:renderPage('#')" class="btn btn-outline-light" data-toggle="dropdown" aria-expanded="false"> Year <i class="feather feather-chevron-down"></i> </a>
+														<ul class="dropdown-menu dropdown-menu-left" role="menu">
+															<li><a href="javascript:renderPage('#')">Monthly</a></li>
+															<li><a href="javascript:renderPage('#')">Yearly</a></li>
+															<li><a href="javascript:renderPage('#')">Weekly</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="card-body">
+												<canvas id="chartLine"></canvas>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-3 col-md-12 col-lg-12">
+								<div class="card overflow-hidden">
+									<div class="card-header border-0">
+										<h4 class="card-title">Notice Board</h4>
+									</div>
+									<div class="pt-2">
+										<div class="list-group">
+											<div class="list-group-item d-flex pt-3 pb-3 align-items-center border-0">
+												<div class="ml-3 ml-xs-0">
+													<div class="calendar-icon icons">
+														<div class="date_time bg-pink-transparent"> <span class="date">18</span> <span class="month">FEB</span> </div>
+													</div>
+												</div>
+												<div class="ml-1">
+													<div class="h5 fs-14 mb-1">Board meeting Completed</div> <small class="text-muted">attend the  company mangers...</small>
+												</div>
+											</div>
+											<div class="list-group-item d-flex pt-3 pb-3 align-items-center border-0">
+												<div class="ml-3 ml-xs-0">
+													<div class="calendar-icon icons">
+														<div class="date_time bg-success-transparent "> <span class="date">16</span> <span class="month">FEB</span> </div>
+													</div>
+												</div>
+												<div class="ml-1">
+													<div class="h5 fs-14 mb-1"><span class="font-weight-normal">Updated the Company</span> Policy</div>
+													<small class="text-muted">some changes & add the  terms & conditions </small>
+												</div>
+											</div>
+											<div class="list-group-item d-flex pt-3 pb-3 align-items-center border-0">
+												<div class="ml-3 ml-xs-0">
+													<div class="calendar-icon icons">
+														<div class="date_time bg-orange-transparent "> <span class="date">17</span> <span class="month">FEB</span> </div>
+													</div>
+												</div>
+												<div class="ml-1">
+													<div class="h5 fs-14 mb-1">Office Timings Changed</div> <small class="text-muted"> this effetct  after March 01st 9:00 Am To 5:00 Pm</small>
+												</div>
+											</div>
+											<div class="list-group-item d-flex pt-3 pb-5 align-items-center border-0">
+												<div class="ml-3 ml-xs-0">
+													<div class="calendar-icon icons">
+														<div class="date_time bg-info-transparent "> <span class="date">26</span> <span class="month">JAN</span> </div>
+													</div>
+												</div>
+												<div class="ml-1">
+													<div class="h5 fs-15 mb-1"> Republic Day Celebrated </div> <small class="text-muted">participate the all employess </small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-4">
+									<div class="card-header border-bottom-0 pt-2 pl-0">
+										<h4 class="card-title">Upcomming Events</h4>
+									</div>
+									<ul class="vertical-scroll pt-4 ">
+										<li class="item">
+											<div class="card p-4 ">
+												<div class="d-flex">
+													<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/16.jpg" alt="img" class="avatar avatar-md bradius mr-3">
+													<div class="mr-3 mt-0 mt-sm-1 d-block">
+														<h6 class="mb-1">Vanessa James</h6>
+														<span class="clearfix"></span>
+														<small>Birthday on Feb 16</small>
+													</div>
+													<span class="avatar bg-primary mr-auto bradius mt-1"> <i class="feather feather-mail text-white"></i> </span>
+												</div>
+											</div>
+										</li>
+										<li class="item">
+											<div class="card p-4 ">
+												<div class="d-flex comming_events calendar-icon icons">
+													<span class="date_time bg-success-transparent bradius ml-3"><span class="date fs-18">21</span>
+														<span class="month fs-10">Feb</span>
+													</span>
+													<div class="mr-3 mt-0 mt-sm-1 d-block">
+														<h6 class="mb-1">Anniversary</h6>
+														<span class="clearfix"></span>
+														<small>3rd Anniversary on 21st Feb</small>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="item">
+											<div class="card p-4 ">
+												<div class="d-flex">
+													<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/4.jpg" alt="img" class="avatar avatar-md bradius mr-3">
+													<div class="mr-3 mt-0 mt-sm-1 d-block">
+														<h6 class="mb-1">Faith Harris</h6>
+														<span class="clearfix"></span>
+														<small>Smart Device Trade Show</small>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="item">
+											<div class="card p-4 ">
+												<div class="d-flex comming_events calendar-icon icons">
+													<span class="date_time bg-pink-transparent bradius ml-3"><span class="date fs-18">25</span>
+														<span class="month fs-10">Mar</span>
+													</span>
+													<div class="mr-3 mt-0 mt-sm-1 d-block">
+														<h6 class="mb-1">Meeting</h6>
+														<span class="clearfix"></span>
+														<small>It will be held in meeting room</small>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-header border-0">
+										<h4 class="card-title">Project Overview</h4>
+										<div class="card-options">
+											<div class="dropdown"> <a href="javascript:renderPage('#')" class="btn btn-outline-light" data-toggle="dropdown" aria-expanded="false"> Week <i class="feather feather-chevron-down"></i> </a>
+												<ul class="dropdown-menu dropdown-menu-left" role="menu">
+													<li><a href="javascript:renderPage('#')">Monthly</a></li>
+													<li><a href="javascript:renderPage('#')">Yearly</a></li>
+													<li><a href="javascript:renderPage('#')">Weekly</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="mt-5">
+											<canvas id="sales-summary" class=""></canvas>
+										</div>
+										<div class="sales-chart mt-4 row text-center">
+											<div class="d-flex my-auto col-sm-4 mx-auto text-center justify-content-center"><span class="dot-label bg-primary ml-2 my-auto"></span>On progress</div>
+											<div class="d-flex my-auto col-sm-4 mx-auto text-center justify-content-center"><span class="dot-label bg-secondary ml-2 my-auto"></span>Pending</div>
+											<div class="d-flex my-auto col-sm-4 mx-auto text-center justify-content-center"><span class="dot-label bg-light4  ml-2 my-auto"></span>Completed</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-header border-0">
+										<h4 class="card-title">Recent Activity</h4>
+										<div class="card-options">
+											<div class="dropdown"> <a href="javascript:renderPage('#')" class="btn btn-outline-light" data-toggle="dropdown" aria-expanded="false"> View All <i class="feather feather-chevron-down"></i> </a>
+												<ul class="dropdown-menu dropdown-menu-left" role="menu">
+													<li><a href="javascript:renderPage('#')">Monthly</a></li>
+													<li><a href="javascript:renderPage('#')">Yearly</a></li>
+													<li><a href="javascript:renderPage('#')">Weekly</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="timeline">
+											<li>
+												<a target="_blank" href="javascript:renderPage('#')" class="font-weight-semibold fs-15 mr-3">Leave Approval Request</a>
+												<a href="javascript:renderPage('#')" class="text-muted float-left fs-13">6 min ago</a>
+												<p class="mb-0 pb-0 text-muted pt-1 fs-11 mr-3">From "RuthDyer" UiDesign Leave</p>
+												<span class="text-muted  mr-3 fs-11"> On Monday 12 Jan 2020.</span>
+											</li>
+											<li class="primary">
+												<a target="_blank" href="javascript:renderPage('#')" class="font-weight-semibold fs-15 mb-2 mr-3">Wok Update</a>
+												<a href="javascript:renderPage('#')" class="text-muted float-left fs-13">10 min ago</a>
+												<p class="mb-0 pb-0 text-muted fs-11 pt-1 mr-3">From "Robert Marshall" Developer</p>
+												<span class="text-muted mr-3 fs-11">Task Completed.</span>
+											</li>
+											<li class="pink">
+												<a target="_blank" href="javascript:renderPage('#')" class="font-weight-semibold fs-15 mb-2 mr-3">Received Mail</a>
+												<a href="javascript:renderPage('#')" class="text-muted float-left fs-13">15 min ago</a>
+												<p class="mb-0 pb-0 text-muted fs-11 pt-1 mr-3">Emergency Sick Leave from "jacob Berry"</p>
+												<span class="text-muted mr-3 fs-11">Ui Designer, Designer Team.</span>
+											</li>
+											<li class="success mb-0 pb-0">
+												<a target="_blank" href="javascript:renderPage('#')" class="font-weight-semibold fs-15 mb-2 mr-3">Job Application Mail</a>
+												<a href="javascript:renderPage('#')" class="text-muted float-left fs-13">1 Hour ago</a>
+												<p class="mb-0 pb-0 text-muted fs-11 pt-1 mr-3">From jobmail@gmail.com laravel developer.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-12 col-lg-12">
+								<div class="card chart-donut1">
+									<div class="card-header  border-0">
+										<h4 class="card-title">Gender by Employees</h4>
+									</div>
+									<div class="card-body">
+										<div id="employees" class="mx-auto apex-dount"></div>
+										<div class="sales-chart pt-5 pb-3 d-flex mx-auto text-center justify-content-center ">
+											<div class="d-flex ml-5"><span class="dot-label bg-primary ml-2 my-auto"></span>Male</div>
+											<div class="d-flex"><span class="dot-label bg-secondary  ml-2 my-auto"></span>Female</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xl-6 col-lg-12 col-md-12">
+								<div class="card">
+									<div class="card-header border-bottom-0">
+										<h3 class="card-title">Recent Job Application</h3>
+										<div class="card-options">
+											<div class="dropdown"> <a href="javascript:renderPage('#')" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> See All <i class="feather feather-chevron-down"></i> </a>
+												<ul class="dropdown-menu dropdown-menu-left" role="menu">
+													<li><a href="javascript:renderPage('#')">Monthly</a></li>
+													<li><a href="javascript:renderPage('#')">Yearly</a></li>
+													<li><a href="javascript:renderPage('#')">Weekly</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="tab-menu-heading table_tabs mt-2 p-0 ">
+										<div class="tabs-menu1">
+											
+											<ul class="nav panel-tabs">
+												<li class="mr-4"><a href="javascript:renderPage('#tab5')" data-toggle="tab">Job Applications</a></li>
+												<li><a href="javascript:renderPage('#tab6')" class="active" data-toggle="tab">Job Opening</a></li>
+												<li><a href="javascript:renderPage('#tab7')" data-toggle="tab">Hired Candidates</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel-body tabs-menu-body table_tabs1 p-0 border-0">
+										<div class="tab-content">
+											<div class="tab-pane" id="tab5">
+												<div class="table-responsive recent_jobs pt-2 pb-2 pl-2 pr-2 card-body">
+													<table class="table mb-0 text-nowrap">
+														<tbody>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/16.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Faith Harris</h6>
+																			<div class="clearfix"></div>
+																			<small class="text-muted">UI designer</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">5 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/1.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">James Paige</h6>
+																			<div class="clearfix"></div>
+																			<small class="text-muted">UI designer</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">2 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>India</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/4.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Liam Miller</h6>
+																			<div class="clearfix"></div>
+																			<small>WireFrameing</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">1 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>Germany</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/8.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Kimberly Berry</h6>
+																			<div class="clearfix"></div>
+																			<small>Senior Prototyper</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">3 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/9.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Kimberly Berry</h6>
+																			<div class="clearfix"></div>
+																			<small>Senior Prototyper</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">3 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="tab-pane active" id="tab6">
+												<div class="table-responsive recent_jobs pt-2 pb-2 pl-2 pr-2 card-body">
+													<table class="table mb-0 text-nowrap">
+														<tbody>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<div class="table_img brround bg-light ml-3">
+																			<span class="bg-light brround fs-12">UI/UX</span>
+																		</div>
+																		<div class="ml-3 mt-3 d-block">
+																			<h6 class="mb-0 fs-13 font-weight-semibold">UI UX Designers</h6>
+																			<div class="clearfix"></div>
+																			<small class="text-muted">12 Dec 2020</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">4 vacancies</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-check text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-help-circle  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-x text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<div class="table_img brround bg-light ml-3">
+																			<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/photos/html.png" alt="img" class=" bg-light brround">
+																		</div>
+																		<div class="ml-3 mt-3 d-block">
+																			<h6 class="mb-0 fs-13 font-weight-semibold">Experienced Html Developer</h6>
+																			<div class="clearfix"></div>
+																			<small class="text-muted">28 Nov 2020</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">2 vacancies</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-check text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-help-circle  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-x text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<div class="table_img brround bg-light ml-3">
+																			<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/photos/jquery.png" alt="img" class=" bg-light brround">
+																		</div>
+																		<div class="ml-3 mt-3 d-block">
+																			<h6 class="mb-0 fs-13 font-weight-semibold">Experienced Jquery Developer</h6>
+																			<div class="clearfix"></div>
+																			<small>12 Nov 2020</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">1 vacancies</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-check text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-help-circle  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-x text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<div class="table_img brround bg-light ml-3">
+																			<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/photos/vue.png" alt="img" class=" bg-light brround">
+																		</div>
+																		<div class="ml-3 mt-3 d-block">
+																			<h6 class="mb-0 fs-13 font-weight-semibold">Vue js Developer</h6>
+																			<div class="clearfix"></div>
+																			<small>24 Oct 2020</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">6 vacancies</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-check text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-help-circle  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-x text-danger"></i></a>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="table_img brround bg-light ml-3">
+																			<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/photos/html.png" alt="img" class=" bg-light brround">
+																		</div>
+																		<div class="ml-3 mt-3 d-block">
+																			<h6 class="mb-0 fs-13 font-weight-semibold">Kimberly Berry</h6>
+																			<div class="clearfix"></div>
+																			<small>14 Oct 2020</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">4 vacancies</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-check text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-help-circle  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns"><i class="feather feather-x text-danger"></i></a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="tab-pane " id="tab7">
+												<div class="table-responsive recent_jobs pt-2 pb-2 pl-2 pr-2 card-body">
+													<table class="table mb-0 text-nowrap">
+														<tbody>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/16.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Faith Harris</h6>
+																			<div class="clearfix"></div>
+																			<small class="text-muted">UI designer</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">5 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/1.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">James Paige</h6>
+																			<div class="clearfix"></div>
+																			<small class="text-muted">UI designer</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">2 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>India</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/4.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Liam Miller</h6>
+																			<div class="clearfix"></div>
+																			<small>WireFrameing</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">1 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>Germany</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr class="border-bottom">
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/8.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Kimberly Berry</h6>
+																			<div class="clearfix"></div>
+																			<small>Senior Prototyper</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">3 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<img src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/9.jpg" alt="img" class="avatar avatar-md brround ml-3">
+																		<div class="mr-3 mt-0 mt-sm-1 d-block">
+																			<h6 class="mb-0">Kimberly Berry</h6>
+																			<div class="clearfix"></div>
+																			<small>Senior Prototyper</small>
+																		</div>
+																	</div>
+																</td>
+																<td class="text-left fs-13">3 years</td>
+																<td class="text-left fs-13"><i class="feather feather-map-pin text-muted mr-2"></i>USA</td>
+																<td class="text-right">
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Mail"><i class="feather feather-mail  text-primary"></i></a>
+																	<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Delete"><i class="feather feather-trash-2 text-danger"></i></a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-12 col-md-12">
+								<div class="card">
+									<div class="card-header border-0">
+										<h3 class="card-title">Attendance</h3>
+										<div class="card-options ">
+											<a href="javascript:renderPage('#')" class="btn btn-outline-light ml-3">View All</a>
+											<div class="dropdown"> <a href="javascript:renderPage('#')" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Date <i class="feather feather-chevron-down"></i> </a>
+												<ul class="dropdown-menu dropdown-menu-left" role="menu">
+													<li><a href="javascript:renderPage('#')">Monthly</a></li>
+													<li><a href="javascript:renderPage('#')">Yearly</a></li>
+													<li><a href="javascript:renderPage('#')">Weekly</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="table-responsive attendance_table mt-4 border-top">
+										<table class="table mb-0 text-nowrap">
+											<thead>
+												<tr>
+													<th class="text-center">S.No</th>
+													<th class="text-left">Employee</th>
+													<th class="text-center">Status</th>
+													<th class="text-center">CheckIn</th>
+													<th class="text-center">CheckOut</th>
+													<th class="text-left">Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="border-bottom">
+													<td class="text-center"><span class="avatar avatar-sm brround">1</span></td>
+													<td class="font-weight-semibold fs-14">Diane Nolan</td>
+													<td class="text-center"><span class="badge bg-success-transparent">Present</span></td>
+													<td class="text-center">09:30 Am</td>
+													<td class="text-center">06:30 Pm</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+												<tr class="border-bottom">
+													<td class="text-center"><span class="avatar avatar-sm brround">2</span></td>
+													<td class="font-weight-semibold fs-14">Deirdre Russell</td>
+													<td class="text-center"><span class="badge bg-success-transparent">Present</span></td>
+													<td class="text-center">09:45 Am</td>
+													<td class="text-center">06:30 Pm</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+												<tr class="border-bottom">
+													<td class="text-center"><span class="avatar avatar-sm brround">3</span></td>
+													<td class="font-weight-semibold fs-14">Joanne Hills</td>
+													<td class="text-center"><span class="badge bg-danger-transparent">Absent</span></td>
+													<td class="text-center">00:00:00</td>
+													<td class="text-center">00:00:00</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+												<tr class="border-bottom">
+													<td class="text-center"><span class="avatar avatar-sm brround">4</span></td>
+													<td class="font-weight-semibold fs-14">Luke Ince</td>
+													<td class="text-center"><span class="badge bg-success-transparent">Present</span></td>
+													<td class="text-center">09:30 Am</td>
+													<td class="text-center">05:15 Pm</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+												<tr class="border-bottom">
+													<td class="text-center"><span class="avatar avatar-sm brround">5</span></td>
+													<td class="font-weight-semibold fs-14">Grace Mackay</td>
+													<td class="text-center"><span class="badge bg-danger-transparent">Absent</span></td>
+													<td class="text-center">00:00:00</td>
+													<td class="text-center">00:00:00</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+												<tr class="border-bottom">
+													<td class="text-center"><span class="avatar avatar-sm brround">6</span></td>
+													<td class="font-weight-semibold fs-14">Wanda Quinn</td>
+													<td class="text-center"><span class="badge bg-success-transparent">Present</span></td>
+													<td class="text-center">09:30 Am</td>
+													<td class="text-center">06:30 Pm</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center"><span class="avatar avatar-sm brround">7</span></td>
+													<td class="font-weight-semibold fs-14">Liam</td>
+													<td class="text-center"><span class="badge bg-success-transparent">Present</span></td>
+													<td class="text-center">09:30 Am</td>
+													<td class="text-center">06:30 Pm</td>
+													<td class="text-center">
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Contact"><i class="feather feather-phone-call text-primary"></i></a>
+														<a href="javascript:renderPage('#')" class="action-btns" data-toggle="tooltip" data-placement="top" title="Chat"><i class="feather-message-circle  text-success"></i></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/horizontal-menu/horizontal-menu.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/sticky/sticky.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/peitychart/jquery.peity.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/peitychart/peitychart.init.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/apexchart/apexcharts.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/vertical-scroll/jquery.bootstrap.newsbox.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/vertical-scroll/vertical-scroll.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/date-picker/jquery-ui.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/chart/chart.bundle.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/chart/utils.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/time-picker/jquery.timepicker.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/time-picker/toggles.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/chart.min/chart.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/chart.min/rounded-barchart.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/jQuery-countdowntimer/jQuery.countdownTimer.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/js/index1.js"></script>
+	</body>
+</html>

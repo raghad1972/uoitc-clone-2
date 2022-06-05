@@ -1,0 +1,17 @@
+
+<link href="https://cdn.jsdelivr.net/npm/@weavy/dropin-js/dist/weavy-dropin.css" rel="stylesheet" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/@weavy/dropin-js/dist/weavy-dropin.js"></script>
+
+  <div id="messenger" style="height:600px;border:1px solid black;"></div>
+<script>
+  const weavy = new Weavy({
+    url: "https://uoitc.weavy.io",
+    jwt: () => session.access_token   
+  });
+
+  const messenger = weavy.app({
+    id: "messenger-demo",
+    type: "messenger",    
+    container: "#messenger"
+  });
+</script>

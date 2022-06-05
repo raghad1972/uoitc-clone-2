@@ -1,0 +1,49 @@
+<html>
+  <body>
+      <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+  
+const { createClient } = supabase
+const _supabase = createClient('https://zcvcfteklhchxzkllsiu.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MjA4NzMyMCwiZXhwIjoxOTU3NjYzMzIwfQ.t-Na3Gxmi3QXBTggnbEB9FV283NfhuvAvoF_UcdArkc')
+
+      _supabase.auth.onAuthStateChange((event, session) => {
+console.log(event)
+  _supabase.from("empsdata").select('*')
+    .then(({ data }) => {
+   console.log(data)    
+    });
+console.log(session)  
+  if(event == 'SIGNED_IN'){ _supabase.from("empsdata").select('*')
+    .then(({ data }) => {
+   console.log(data)    
+    });}
+}) 
+    
+        function handleCredentialResponse(response) {
+          console.log("Encoded JWT ID token: " + response.credential);
+          //var { user, error } = _supabase.auth.setAuth(response.credential);
+         _supabase.auth.api.getUser(response.credential).then(({ user, error }) =>{
+         console.log(user); 
+        });
+         //_supabase.auth.signIn({accessToken:response.credential}).then(({ user, error }) =>{
+       //   console.log(user); 
+       // });
+        }
+        window.onload = function () {
+          google.accounts.id.initialize({
+            client_id: "961417719029-826uc3hvjl6efb30cdfoa4tiuv8niki7.apps.googleusercontent.com",
+            callback: handleCredentialResponse
+          });
+          google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { theme: "outline", size: "large" }  // customization attributes
+          );
+          google.accounts.id.prompt(); // also display the One Tap dialog
+        }
+    </script>
+    <div id="buttonDiv"></div> 
+  </body>
+</html>

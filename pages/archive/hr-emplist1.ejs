@@ -1,0 +1,149 @@
+						<!-- Row-->
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-7">
+												<div class="mt-0 text-right"> <span class="font-weight-semibold">Total Employees</span>
+													<h3 class="mb-0 mt-1 text-success">5,678</h3>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="icon1 bg-success-transparent my-auto  float-left"> <i class="las la-users"></i> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-7">
+												<div class="mt-0 text-right"> <span class="font-weight-semibold">Total Male Employees</span>
+													<h3 class="mb-0 mt-1 text-primary">3,876</h3>
+												</div>
+											</div>
+											<div class="col-5">
+												<div class="icon1 bg-primary-transparent my-auto  float-left"> <i class="las la-male"></i> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-7">
+												<div class="mt-0 text-right"> <span class="font-weight-semibold">Total Female Employees</span>
+												<h3 class="mb-0 mt-1 text-secondary">1,396</h3> </div>
+											</div>
+											<div class="col-5">
+												<div class="icon1 bg-secondary-transparent my-auto  float-left"> <i class="las la-female"></i> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-7">
+												<div class="mt-0 text-right"> <span class="font-weight-semibold">Total New Employees</span>
+												<h3 class="mb-0 mt-1 text-danger">398</h3> </div>
+											</div>
+											<div class="col-5">
+												<div class="icon1 bg-danger-transparent my-auto  float-left"> <i class="las la-user-friends"></i> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Row -->
+
+						<!-- Row -->
+						<div class="row">
+							<div class="col-xl-12 col-md-12 col-lg-12">
+								<div class="card">
+									<div class="card-header  border-0">
+										<h4 class="card-title">Employees List</h4>
+									</div>
+									<div class="card-body">
+										<div class="table-responsive">
+											<table class="table  table-vcenter text-nowrap table-bordered border-bottom" id="hr-table">
+											
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Row-->
+						<script>
+							$.ajax({
+						   url:"/api/getd",
+						   method:"POST",
+						   data:{fld:"fld"},
+						   cache:false,
+						   success:function(res)
+						   {
+							   console.log(res.data["id"])
+							$('#hr-table').append(`<thead>
+													<tr>
+														<th class="border-bottom-0 w-5">ت</th>
+														<th class="border-bottom-0">الاسم</th>
+														<th class="border-bottom-0 w-10">رقم الموظف</th>
+														<th class="border-bottom-0">القسم</th>
+														<th class="border-bottom-0">التخصص</th>
+														<th class="border-bottom-0">رقم التلفون</th>
+														<th class="border-bottom-0">تاريخ التعيين</th>
+														<th class="border-bottom-0">At work</th>
+														<th class="border-bottom-0">الحالة</th>
+														<th class="border-bottom-0">Actions</th>
+													</tr>
+												</thead>`);
+												jQuery.each(res.data, function(i, val) {
+													$('#hr-table').append(`<tr>
+														<td>`+val['id']+`</td>
+														<td>
+															<div class="d-flex">
+																<span class="avatar avatar-md brround ml-3" style="background-image: url(`+val['Picture']+`)"></span>
+																<div class="mr-3 mt-0 mt-sm-1 d-block">
+																	<h6 class="mb-1 fs-14">`+val['Emp_Name']+`</h6>
+																	<p class="text-muted mb-0 fs-12">`+val['Email']+`</p>
+																</div>
+															</div>
+														</td>
+														<td>#`+val['Emp_ID']+`</td>
+														<td>`+val['Department']+`</td>
+														<td>`+val['Designation']+`</td>
+														<td>`+val['Phone_Number']+`</td>
+														<td>`+val['Join_Date']+`</td>
+														<td>`+val['At_work']+`</td>
+														<td><span class="badge badge-success">Active</span></td>
+														<td>
+															<a class="btn btn-primary btn-icon btn-sm" href="hr-empview.html">
+																<i class="feather feather-edit" data-toggle="tooltip" data-original-title="View/Edit"></i>
+															</a>
+															<a class="btn btn-danger btn-icon btn-sm" data-toggle="tooltip" data-original-title="Delete"><i class="feather feather-trash-2"></i></a>
+														</td>
+													</tr>`)
+});
+							   
+					}
+					});
+						  </script>
+<!-- INTERNAL Data tables -->
+<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/datatable/responsive.bootstrap4.min.js"></script>
+
+
+
+<!-- Custom js-->
+<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/js/custom.js"></script>                        

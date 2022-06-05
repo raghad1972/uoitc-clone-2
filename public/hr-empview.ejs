@@ -1,0 +1,651 @@
+<!-- INTERNAL Ratings css -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/rating/css/ratings.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/rating/css/rating-themes.css">
+
+<div class="page-header d-xl-flex d-block">
+							<div class="page-leftheader">
+								<h4 class="page-title">تفاصيل الموظف</h4>
+							</div>
+							<div class="page-leftheader mr-md-auto">
+								<div class="align-items-end flex-wrap my-auto right-content breadcrumb-right">
+									<div class="btn-list">
+										<a href="javascript:renderPage('hr-addemployee')" class="btn btn-primary ml-3">اضافة موظف</a>
+										<button class="btn btn-light" data-toggle="tooltip" data-placement="top" title="E-mail"> <i class="feather feather-mail"></i> </button>
+										<button class="btn btn-light" data-placement="top" data-toggle="tooltip" title="Contact"> <i class="feather feather-phone-call"></i> </button>
+										<button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Info"> <i class="feather feather-info"></i> </button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						
+						<div class="row">
+							<div class="col-xl-3 col-md-12 col-lg-12">
+								<div class="card box-widget widget-user">
+									<div class="card-body text-center">
+										<div class="widget-user-image mx-auto text-center">
+											<img class="emp-picture avatar avatar-xxl brround rounded-circle" alt="img" src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/images/users/person.png">
+										</div>
+										<div class="pro-user mt-3">
+											<h5 id="emp_nam" class="pro-user-username text-dark mb-1 fs-16"></h5>
+											<h6 class="job_indep pro-user-desc text-muted fs-12"></h6>
+										</div>
+										<div class="star-ratings start-ratings-main mb-0 clearfix">
+											<div class="stars stars-example-fontawesome star-sm">
+												<select id="example-fontawesome" name="rating">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4" selected="">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer p-0">
+										<div class="row">
+											<div class="col-4 text-center py-5 border-left">
+												<h5 class="fs-12 font-weight-semibold mb-3">حزيران</h5>
+												<h5 class="mb-2">
+													<span class="fs-18 text-success">22</span>
+													<span class="my-auto fs-9 font-weight-normal  ml-1 mr-1">/</span>
+													<span class="fs-18 font-weight-semibold text-dark">30</span>
+												</h5>
+												<h5 class="fs-12 mb-0">الحضور</h5>
+											</div>
+											<div class="col-4  py-5 text-center border-left">
+												<h5 class="fs-12 font-weight-semibold mb-3">سنة-2022</h5>
+												<h5 class="mb-2">
+													<span class="fs-18 text-orange">0</span>
+													<span class="my-auto fs-9 font-weight-normal  ml-1 mr-1">/</span>
+													<span id="vac_credit1" class="fs-18 font-weight-semibold text-dark"></span>
+												</h5>
+												<h5 class="fs-12 mb-0">Leaves</h5>
+											</div>
+											<div class="col-4 text-center py-5">
+												<h5 class="fs-12 font-weight-semibold mb-3">سنة-2022</h5>
+												<h5 class="mb-2">
+													<span id="sick_credit" class="fs-18 text-primary">0</span>
+												</h5>
+												<h5 class="fs-12 mb-0">رصيد المرضية</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header  border-0">
+										<div class="card-title">Statistics-2021</div>
+									</div>
+									<div class="card-body">
+										<div class="row mb-7">
+											<div class="col-4 text-center">
+												<div class="chart-circle chart-circle-sm" data-value="0.89" data-thickness="5" data-color="#3366ff">
+													<div class="chart-circle-value text-primary">89</div>
+												</div>
+												<h6 class="fs-14 font-weight-semibold mt-3">Attendance</h6>
+											</div>
+											<div class="col-4 text-center">
+												<div class="chart-circle chart-circle-sm" data-value="0.23" data-thickness="5" data-color="#fe7f00">
+													<div class="chart-circle-value text-secondary">23</div>
+												</div>
+												<h6 class="fs-14 font-weight-semibold mt-3">Projects</h6>
+											</div>
+											<div class="col-4 text-center">
+												<div class="chart-circle chart-circle-sm" data-value="0.67" data-thickness="5" data-color="#0dcd94">
+													<div class="chart-circle-value text-success">67%</div>
+												</div>
+												<h6 class="fs-14 font-weight-semibold mt-3">Performance</h6>
+											</div>
+										</div>
+										<div class="d-flex align-items-end justify-content-between mg-b-5">
+											<h6 class="">This Week</h6>
+											<h6 class="font-weight-bold mb-1">01</h6>
+										</div>
+										<div class="progress progress-sm mb-5">
+											<div class="progress-bar bg-danger w-10"></div>
+										</div>
+										<div class="d-flex align-items-end justify-content-between mg-b-5">
+											<h6 class="">This Month</h6>
+											<h6 class="font-weight-bold mb-1">05</h6>
+										</div>
+										<div class="progress progress-sm mb-5">
+											<div class="progress-bar bg-info w-30"></div>
+										</div>
+										<div class="d-flex align-items-end justify-content-between mg-b-5">
+											<h6 class="">This Year</h6>
+											<h6 class="font-weight-bold mb-1">22</h6>
+										</div>
+										<div class="progress progress-sm mb-5">
+											<div class="progress-bar bg-warning w-50"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xl-9 col-md-12 col-lg-12">
+								<div class="tab-menu-heading hremp-tabs p-0 ">
+									<div class="tabs-menu1">
+										<!-- Tabs -->
+										<ul class="nav panel-tabs">
+											<li class="mr-4"><a href="#tab5" class="active" data-toggle="tab">المعلومات الشخصية</a></li>
+											<li><a href="#tab6" data-toggle="tab">المعلومات الوظيفية</a></li>
+											<li><a href="#tab7" data-toggle="tab">معلومات البنك</a></li>
+											<li><a href="#tab8" data-toggle="tab">رفع الوثائق</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="panel-body tabs-menu-body hremp-tabs1 p-0">
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab5">
+											<div class="card-body">
+												<h4 class="mb-4 font-weight-bold">Basic</h4>
+												<div class="form-group ">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الاسم</label>
+														</div>
+														<div class="col-md-9">
+															<div class="row">
+																<div class="col-md-6">
+																	<input id="emp_name0" type="text" class="form-control mb-md-0 mb-5" placeholder="الاسم الاول" value="">
+																	<span class="text-muted"></span>
+																</div>
+																<div class="col-md-6">
+																	<input id="emp_name1" type="text" class="form-control" placeholder="الاسم الثاني" value="">
+																</div>
+                                <div class="col-md-6">
+																	<input id="emp_name2" type="text" class="form-control mb-md-0 mb-5" placeholder="الاسم الثالث" value="">
+																	<span class="text-muted"></span>
+																</div>
+                                <div class="col-md-6">
+																	<input id="emp_name3" type="text" class="form-control mb-md-0 mb-5" placeholder="الاسم الرابع" value="">
+																	<span class="text-muted"></span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group ">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">اللقب</label>
+														</div>
+														<div class="col-md-9">
+															<input id="emp_name4" type="text" class="form-control" placeholder="اللقب" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">رقم الموبايل</label>
+														</div>
+														<div class="col-md-9">
+															<input id="mobile" type="text" class="form-control" placeholder="رقم الموبايل" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">رقم الطواريء</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" class="form-control" placeholder="رقم الطواريء" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الديانة</label>
+														</div>
+														<div class="col-md-9">
+															<input id="religion" type="text" class="form-control" placeholder="الديانة" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group ">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">تاريخ الميلاد</label>
+														</div>
+														<div class="col-md-9">
+															<input id="birth_dat" type="text" class="form-control fc-datepicker" placeholder="تاريخ الميلاد" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group ">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label">الجنس</label>
+														</div>
+														<div class="col-md-9">
+															<div class="custom-controls-stacked d-md-flex">
+																<label class="custom-control custom-radio ml-4">
+																	<span id="gender" class="custom-control-label"></span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الحالة الزوجية</label>
+														</div>
+														<div class="col-md-9">
+															<select id="marital_status" name="projects" class="form-control custom-select">
+																<option value="0">اعزب</option>
+																<option value="1">متزوج</option>
+																<option value="2">مطلق</option>
+                                <option value="3">ارمل</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">فصيلة الدم</label>
+														</div>
+														<div class="col-md-9">
+															<select name="projects" class="form-control custom-select">
+																<option value="0">A+</option>
+																<option value="1" selected="">B+</option>
+																<option value="2">O+</option>
+																<option value="3">AB+</option>
+																<option value="4">A-</option>
+																<option value="5">B-</option>
+																<option value="6">O-</option>
+																<option value="7">AB-</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="form-group ">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الايميل</label>
+														</div>
+														<div class="col-md-9">
+															<input id="email" type="text" class="form-control" placeholder="email" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+
+<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">العنوان</label>
+														</div>
+														<div class="col-md-9">
+															<div class="row">
+																<div class="col-md-6">
+																	<input id="address" type="text" class="form-control mb-md-0 mb-5" placeholder="العنوان" value="">
+																	<span class="text-muted"></span>
+																</div>
+																<div class="col-md-6">
+																	<input id="av_no" type="text" class="form-control" placeholder="محلة" value="">
+																</div>
+                                <div class="col-md-6">
+																	<input id="st_no" type="text" class="form-control mb-md-0 mb-5" placeholder="زقاق" value="">
+																	<span class="text-muted"></span>
+																</div>
+                                <div class="col-md-6">
+																	<input id="hous_no" type="text" class="form-control mb-md-0 mb-5" placeholder="دار" value="">
+																	<span class="text-muted"></span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-label mb-0 mt-2">رفع الصورة</div>
+														</div>
+														<div class="col-md-9">
+															<div class="input-group file-browser">
+																<input type="text" class="form-control border-left-0 browse-file" placeholder="اختر" readonly="">
+																<label class="input-group-append mb-0">
+																	<span class="btn ripple btn-primary">
+																		بحث <input type="file" class="file-browserinput" style="display: none;" multiple="">
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+										<div class="tab-pane" id="tab6">
+											<div class="card-body">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">رقم الموظف</label>
+														</div>
+														<div class="col-md-9">
+															<input id="emp_id" type="text" class="form-control" placeholder="رقم الموظف" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">القسم</label>
+														</div>
+														<div class="col-md-9">
+															<input id="emp_dep" type="text" class="form-control" placeholder="القسم" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">العنوان الوظيفي</label>
+														</div>
+														<div class="col-md-9">
+															<input id="job_indep" type="text" class="form-control" placeholder="العنوان الوظيفي" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">تاريخ التعيين</label>
+														</div>
+														<div class="col-md-9">
+															<input id="emp_dat" type="text" class="form-control fc-datepicker" placeholder="تاريخ التعيين" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">تاريخ اعادة التعيين</label>
+														</div>
+														<div class="col-md-9">
+															<input id="re_emp_dat" type="text" class="form-control fc-datepicker" placeholder="تاريخ اعادة التعيين">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">تاريخ التقاعد</label>
+														</div>
+														<div class="col-md-9">
+															<input id="ret_dat" type="text" class="form-control fc-datepicker" placeholder="تاريخ التقاعد">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">رصيد الاجازات
+																<span class="form-help" data-toggle="tooltip" data-placement="top" title="رصيد الاجازات المتبقي للموظف">؟</span>
+															</label>
+														</div>
+														<div class="col-md-9">
+															<input id="vac_credit" type="text" class="form-control" placeholder="0">
+														</div>
+													</div>
+												</div>
+												<h4 class="mb-5 mt-7 font-weight-bold">الراتب الكلي</h4>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">نوع التعيين</label>
+														</div>
+														<div class="col-md-9">
+															<select id="emp_type" class="form-control custom-select">
+																<option value="0">دائم</option>
+																<option value="1">عقد</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الراتب</label>
+														</div>
+														<div class="col-md-9">
+															<input id="salary" type="text" class="form-control" placeholder="$Salary" value="$28000">
+														</div>
+													</div>
+												</div>
+												<div class="form-group mt-7">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label">الحالة:</label>
+														</div>
+														<div class="col-md-9">
+															<label class="custom-switch">
+																<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
+																<span class="custom-switch-indicator"></span>
+																<span class="custom-switch-description">فعال/غير فعال</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tab7">
+											<div class="card-body">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الاسم على البطاقة</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" class="form-control" placeholder="Name" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">رقم الحساب</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" class="form-control" placeholder="رقم الحساب" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">اسم المصرف</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" class="form-control" placeholder="اسم المصرف" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">الموقع</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" class="form-control" placeholder="الموقع" value="">
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<label class="form-label mb-0 mt-2">كود المصرف (IFSC)
+																<span class="form-help" data-toggle="tooltip" data-placement="top" title="رقم تعريف المصرف في العراق">؟</span>
+															</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" class="form-control" placeholder="Code" value="">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tab8">
+											<div class="card-body">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-label mb-0 mt-2">المستمسكات</div>
+														</div>
+														<div class="col-md-9">
+															<div class="input-group file-browser">
+																<input type="text" class="form-control border-left-0 browse-file" placeholder="اختر" readonly="">
+																<label class="input-group-append mb-0">
+																	<span class="btn ripple btn-light">
+																		بحث <input type="file" class="file-browserinput" style="display: none;" multiple="">
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-label mb-0 mt-2">امر التعيين</div>
+														</div>
+														<div class="col-md-9">
+															<div class="input-group file-browser">
+																<input type="text" class="form-control border-left-0 browse-file" placeholder="اختر" readonly="">
+																<label class="input-group-append mb-0">
+																	<span class="btn ripple btn-light">
+																		بحث <input type="file" class="file-browserinput" style="display: none;" multiple="">
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-label mb-0 mt-2">الشهادة</div>
+														</div>
+														<div class="col-md-9">
+															<div class="input-group file-browser">
+																<input type="text" class="form-control border-left-0 browse-file" placeholder="اختر" readonly="">
+																<label class="input-group-append mb-0">
+																	<span class="btn ripple btn-light">
+																		بحث <input type="file" class="file-browserinput" style="display: none;" multiple="">
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-label mb-0 mt-2">السيرة الذاتية</div>
+														</div>
+														<div class="col-md-9">
+															<div class="input-group file-browser">
+																<input type="text" class="form-control border-left-0 browse-file" placeholder="اختر" readonly="">
+																<label class="input-group-append mb-0">
+																	<span class="btn ripple btn-light">
+																		بحث <input type="file" class="file-browserinput" style="display: none;" multiple="">
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="col-md-3">
+															<div class="form-label mb-0 mt-2">الاوامر الادارية الاخرى</div>
+														</div>
+														<div class="col-md-9">
+															<div class="input-group file-browser">
+																<input type="text" class="form-control border-left-0 browse-file" placeholder="اختر" readonly="">
+																<label class="input-group-append mb-0">
+																	<span class="btn ripple btn-light">
+																		بحث <input type="file" class="file-browserinput" style="display: none;" multiple="">
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-footer text-left">
+											<a href="#" class="btn btn-primary">تحديث</a>
+											<a href="#" class="btn btn-danger">الغاء</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Row-->
+
+            </div>
+
+		</div>
+
+		<!-- Circle-progress js-->
+
+		<!-- INTERNAl Rating js-->
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/rating/js/jquery.barrating.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/rating/js/custom-ratings.js"></script>
+
+		<!-- INTERNAL  Datepicker js -->
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/date-picker/jquery-ui.js"></script>
+
+		<!-- INTERNAL Index js-->
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/js/hr/hr-empview.js"></script>
+		
+		<script src="https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/js/custom.js"></script>
+
+<script>
+ // $.cachedScript( "https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/rating/js/jquery.barrating.js", "https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/rating/js/custom-ratings.js", "https://cdn.jsdelivr.net/gh/hmrsmart/dayone@main/public/assets/plugins/date-picker/jquery-ui.js").done(function( script, textStatus ) {
+var url = new URL(window.location.href);
+var id = url.searchParams.get("id");
+//console.log(url);
+    _supabase.from("employees_info").select('*').eq("id",id).then(({ data }) => {
+  
+ // console.clear();
+ // console.log(data);
+if(data[0]['photo'] !=null)$(".emp-picture").attr("src",data[0]['photo']);
+//var c = (data[0]['sex'] ? 'Female' : 'Male');
+  $("#gender").text((data[0]['sex']=='0' ? 'انثى' : 'ذكر'))     
+      for (let [key, value] of Object.entries(data[0])) {
+if(tag =jQuery("#"+key)){ 
+  if(value == 'NULL')value='لا يوجد'
+  //console.log(tag.prop("tagName"));
+switch(tag.prop("tagName")) {
+  case "INPUT":
+    tag.attr("value", value);
+    break;
+  case "SELECT":
+   $("#"+key+' option[value='+value+']').attr('selected','');
+   // console.log("'"+"#"+key+' option[value="'+value+'"]'+"'");
+    break;
+  case "SPAN":
+   tag.text(value);
+    break;  
+  default:
+    if(tag.prop("tagName") !='undefined')tag.text(value);
+    //console.log(tag.prop("tagName"));
+}
+}
+ // console.log(`${key}: ${value}`);
+      //  if($("#"+key).text(value));
+       // if($("#"+key).attr("value", value));
+       // if($("#"+key).val(value));
+}
+  });
+ //    });
+//$('#mar_status option[value=2]').attr('selected','selected');  
+</script>
